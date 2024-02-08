@@ -12,6 +12,7 @@
  "field_order": [
   "basic_details_tab",
   "basic_information",
+  "employee_id",
   "employee",
   "naming_series",
   "first_name",
@@ -817,6 +818,11 @@
    "fieldname": "iban",
    "fieldtype": "Data",
    "label": "IBAN"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "label": "Employee ID"
   }
  ],
  "icon": "fa fa-user",
@@ -824,7 +830,7 @@
  "image_field": "image",
  "is_tree": 1,
  "links": [],
- "modified": "2024-01-24 02:20:26.145996",
+ "modified": "2024-02-08 09:53:52.453772",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Employee",
@@ -866,10 +872,10 @@
    "write": 1
   }
  ],
- "search_fields": "employee_name",
+ "search_fields": "employee_name,employee_id",
  "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "employee_name"
+ "title_field": "employee_id"
 }
