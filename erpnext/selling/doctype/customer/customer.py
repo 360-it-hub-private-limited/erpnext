@@ -29,24 +29,22 @@ class Customer(TransactionBase):
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
-		from frappe.types import DF
-
-		from erpnext.accounts.doctype.allowed_to_transact_with.allowed_to_transact_with import (
-			AllowedToTransactWith,
-		)
+		from erpnext.accounts.doctype.allowed_to_transact_with.allowed_to_transact_with import AllowedToTransactWith
 		from erpnext.accounts.doctype.party_account.party_account import PartyAccount
-		from erpnext.selling.doctype.customer_credit_limit.customer_credit_limit import (
-			CustomerCreditLimit,
-		)
+		from erpnext.selling.doctype.customer_credit_limit.customer_credit_limit import CustomerCreditLimit
 		from erpnext.selling.doctype.sales_team.sales_team import SalesTeam
 		from erpnext.utilities.doctype.portal_user.portal_user import PortalUser
+		from frappe.types import DF
 
 		account_manager: DF.Link | None
 		accounts: DF.Table[PartyAccount]
 		companies: DF.Table[AllowedToTransactWith]
+		create_user: DF.Check
 		credit_limits: DF.Table[CustomerCreditLimit]
 		customer_details: DF.Text | None
 		customer_group: DF.Link | None
+		customer_mail_id: DF.Data | None
+		customer_mobile_no: DF.Data | None
 		customer_name: DF.Data
 		customer_pos_id: DF.Data | None
 		customer_primary_address: DF.Link | None
@@ -91,6 +89,31 @@ class Customer(TransactionBase):
 		"""Load address and contacts in `__onload`"""
 		load_address_and_contact(self)
 		self.load_dashboard_info()
+
+	def before_save(self):
+		if self.create_user == 1:
+			# Check if the user already exists
+			user_exists = frappe.db.exists("User", {"email": self.customer_mail_id})
+
+			if not user_exists:
+				# Create a new user
+				user = frappe.get_doc({
+					"doctype": "User",
+					"email": self.customer_mail_id,
+					# "mobile_no": self.customer_mobile_no,
+					"role_profile_name":"Customer",
+					"send_welcome_email":0,
+					"first_name":self.customer_name,
+					"new_password": self.customer_mobile_no,
+					"module_profile":"no module",
+					# Add other user details as needed
+				})
+				user.insert()
+				frappe.msgprint(f"User {user.name} created successfully.", alert=True)
+			else:
+				frappe.msgprint(f"User with email {self.customer_mail_id} already exists.", alert=True)
+
+
 
 	def load_dashboard_info(self):
 		info = get_dashboard_info(self.doctype, self.name, self.loyalty_program)
