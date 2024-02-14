@@ -26,10 +26,12 @@ class Lead(SellingController, CRMNote):
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
+		from custom_app.custom_app.doctype.multiselect_item.multiselect_item import MultiselectItem
+		from erpnext.crm.doctype.crm_note.crm_note import CRMNote
 		from frappe.types import DF
 
-		from erpnext.crm.doctype.crm_note.crm_note import CRMNote
-
+		admin_information: DF.TextEditor | None
+		admin_notes: DF.Table[CRMNote]
 		annual_revenue: DF.Currency
 		blog_subscriber: DF.Check
 		campaign_name: DF.Link | None
@@ -61,23 +63,12 @@ class Lead(SellingController, CRMNote):
 		qualification_status: DF.Literal["Unqualified", "In Process", "Qualified"]
 		qualified_by: DF.Link | None
 		qualified_on: DF.Date | None
-		request_type: DF.Literal[
-			"", "Product Enquiry", "Request for Information", "Suggestions", "Other"
-		]
+		request_type: DF.Literal["", "Product Enquiry", "Request for Information", "Suggestions", "Other"]
 		salutation: DF.Link | None
+		services: DF.TableMultiSelect[MultiselectItem]
 		source: DF.Link | None
 		state: DF.Data | None
-		status: DF.Literal[
-			"Lead",
-			"Open",
-			"Replied",
-			"Opportunity",
-			"Quotation",
-			"Lost Quotation",
-			"Interested",
-			"Converted",
-			"Do Not Contact",
-		]
+		status: DF.Literal["Lead", "Open", "Replied", "Opportunity", "Quotation", "Lost Quotation", "Interested", "Converted", "Do Not Contact", "Lost"]
 		territory: DF.Link | None
 		title: DF.Data | None
 		type: DF.Literal["", "Client", "Channel Partner", "Consultant"]
