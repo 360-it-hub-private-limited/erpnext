@@ -82,6 +82,7 @@ class Customer(TransactionBase):
 		tax_id: DF.Data | None
 		tax_withholding_category: DF.Link | None
 		territory: DF.Link | None
+		test: DF.Data | None
 		website: DF.Data | None
 	# end: auto-generated types
 

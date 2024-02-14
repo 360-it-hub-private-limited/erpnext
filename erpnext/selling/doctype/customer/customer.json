@@ -26,6 +26,7 @@
   "create_user",
   "customer_mail_id",
   "customer_mobile_no",
+  "test",
   "defaults_tab",
   "default_currency",
   "default_bank_account",
@@ -592,6 +593,11 @@
    "fieldtype": "Data",
    "label": "Customer Mobile No.",
    "mandatory_depends_on": "create_user"
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "label": "Test"
   }
  ],
  "icon": "fa fa-user",
@@ -605,7 +611,7 @@
    "link_fieldname": "party"
   }
  ],
- "modified": "2024-02-09 12:53:25.666002",
+ "modified": "2024-02-14 15:56:50.271646",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Customer",
