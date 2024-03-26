@@ -763,8 +763,8 @@
    "type": "Link"
   }
  ],
- "modified": "2024-03-05 15:37:53.567848",
- "modified_by": "Administrator",
+ "modified": "2024-03-24 15:17:56.053351",
+ "modified_by": "lokesh@360ithub.com",
  "module": "Stock",
  "name": "Stock",
  "number_cards": [
@@ -787,7 +787,7 @@
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 16.0,
+ "sequence_id": 17.0,
  "shortcuts": [
   {
    "color": "Green",

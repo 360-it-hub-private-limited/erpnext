@@ -237,8 +237,8 @@
    "type": "Link"
   }
  ],
- "modified": "2024-03-05 15:37:52.676441",
- "modified_by": "Administrator",
+ "modified": "2024-03-24 15:17:55.178351",
+ "modified_by": "lokesh@360ithub.com",
  "module": "Setup",
  "name": "Home",
  "number_cards": [],
@@ -248,7 +248,7 @@
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 6.0,
+ "sequence_id": 7.0,
  "shortcuts": [
   {
    "label": "Item",

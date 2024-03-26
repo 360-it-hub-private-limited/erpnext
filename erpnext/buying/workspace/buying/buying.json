@@ -503,8 +503,8 @@
    "type": "Link"
   }
  ],
- "modified": "2024-03-05 15:37:53.350155",
- "modified_by": "Administrator",
+ "modified": "2024-03-24 15:17:55.830458",
+ "modified_by": "lokesh@360ithub.com",
  "module": "Buying",
  "name": "Buying",
  "number_cards": [],
@@ -514,7 +514,7 @@
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 14.0,
+ "sequence_id": 15.0,
  "shortcuts": [
   {
    "color": "Green",

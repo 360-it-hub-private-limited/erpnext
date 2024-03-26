@@ -192,8 +192,8 @@
    "type": "Link"
   }
  ],
- "modified": "2024-03-05 15:37:54.570705",
- "modified_by": "Administrator",
+ "modified": "2024-03-24 15:17:57.128680",
+ "modified_by": "lokesh@360ithub.com",
  "module": "Projects",
  "name": "Projects",
  "number_cards": [],
@@ -203,7 +203,7 @@
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 28.0,
+ "sequence_id": 29.0,
  "shortcuts": [
   {
    "color": "Grey",
