@@ -621,18 +621,18 @@
    "type": "Link"
   }
  ],
- "modified": "2024-03-24 15:17:55.934375",
+ "modified": "2024-05-01 18:31:00.582002",
  "modified_by": "lokesh@360ithub.com",
  "module": "Selling",
  "name": "Selling",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "",
+ "parent_page": "Accounting",
  "public": 1,
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 16.0,
+ "sequence_id": 13.0,
  "shortcuts": [
   {
    "color": "Grey",

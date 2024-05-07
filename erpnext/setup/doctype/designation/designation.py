@@ -14,7 +14,7 @@ class Designation(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		description: DF.Text | None
+		description: DF.TextEditor | None
 		designation_name: DF.Data
 	# end: auto-generated types
 

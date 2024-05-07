@@ -559,8 +559,7 @@
    "fieldname": "marital_status",
    "fieldtype": "Select",
    "label": "Marital Status",
-   "options": "\nSingle\nMarried\nDivorced\nWidowed",
-   "reqd": 1
+   "options": "\nSingle\nMarried\nDivorced\nWidowed"
   },
   {
    "fieldname": "blood_group",
@@ -932,14 +931,12 @@
   {
    "fieldname": "adhaar_card_doc",
    "fieldtype": "Attach",
-   "label": "Adhaar Card Doc",
-   "reqd": 1
+   "label": "Adhaar Card Doc"
   },
   {
    "fieldname": "pan_doc",
    "fieldtype": "Attach",
-   "label": "PAN Doc",
-   "reqd": 1
+   "label": "PAN Doc"
   }
  ],
  "icon": "fa fa-user",
@@ -947,7 +944,7 @@
  "image_field": "image",
  "is_tree": 1,
  "links": [],
- "modified": "2024-03-22 19:00:36.233009",
+ "modified": "2024-04-18 10:12:53.778723",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Employee",

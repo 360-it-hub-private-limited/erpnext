@@ -24,14 +24,14 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Text",
+   "fieldtype": "Text Editor",
    "label": "Description"
   }
  ],
  "icon": "fa fa-bookmark",
  "idx": 1,
  "links": [],
- "modified": "2023-02-10 01:53:41.319386",
+ "modified": "2024-05-02 14:58:49.505146",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Designation",
