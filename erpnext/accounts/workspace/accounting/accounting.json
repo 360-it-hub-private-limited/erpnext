@@ -1061,8 +1061,8 @@
    "type": "Link"
   }
  ],
- "modified": "2024-05-01 18:31:00.237004",
- "modified_by": "lokesh@360ithub.com",
+ "modified": "2024-05-16 17:12:03.820812",
+ "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Accounting",
  "number_cards": [
@@ -1089,7 +1089,7 @@
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 10.0,
+ "sequence_id": 11.0,
  "shortcuts": [
   {
    "color": "Grey",
