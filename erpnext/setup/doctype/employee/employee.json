@@ -590,8 +590,7 @@
    "fieldname": "education",
    "fieldtype": "Table",
    "label": "Education",
-   "options": "Employee Education",
-   "reqd": 1
+   "options": "Employee Education"
   },
   {
    "collapsible": 1,
@@ -944,7 +943,7 @@
  "image_field": "image",
  "is_tree": 1,
  "links": [],
- "modified": "2024-04-18 10:12:53.778723",
+ "modified": "2024-07-05 16:48:02.345572",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Employee",
@@ -991,5 +990,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "employee_id"
+ "title_field": "employee_id",
+ "track_changes": 1
 }
